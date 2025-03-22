@@ -1,0 +1,54 @@
+{
+  "todos": [
+    {
+      "id": "1",
+      "title": "Read a book",
+      "completed": true
+    },
+    {
+      "id": "2",
+      "title": "Buy a milk",
+      "completed": true
+    },
+    {
+      "id": "3",
+      "title": "Go to the gym",
+      "completed": false
+    },
+    {
+      "id": "4",
+      "title": "Learn React",
+      "completed": false
+    },
+    {
+      "id": "5",
+      "title": "Learn Redux",
+      "completed": false
+    },
+    {
+      "id": "6",
+      "title": "Clean the room",
+      "completed": true
+    },
+    {
+      "id": "7",
+      "title": "Go to the shop",
+      "completed": false
+    },
+    {
+      "id": "8",
+      "title": "Do homework",
+      "completed": true
+    },
+    {
+      "id": "9",
+      "title": "Go to the cinema",
+      "completed": false
+    },
+    {
+      "id": "10",
+      "title": "Watch a movie",
+      "completed": false
+    }
+  ]
+}
