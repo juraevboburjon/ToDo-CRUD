@@ -3,7 +3,6 @@ import { useState } from "react";
 import axios from "axios";
 
 function Create() {
-  const todoId = 10;
   const [values, setTitle] = useState({
     id: "",
     title: "",
@@ -13,11 +12,13 @@ function Create() {
   const navigate = useNavigate();
 
   const handleSubmit = (event) => {
+    const data = {
+      title: values.title,
+      completed: values.completed,
+    };
     event.preventDefault();
-    const id = todoId + 1;
-    values.id = id;
     axios
-      .post("http://localhost:3000/todos", values)
+      .post("http://localhost:3000/todos", data)
       .then((res) => {
         console.log(res);
         navigate("/");

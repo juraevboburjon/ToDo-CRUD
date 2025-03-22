@@ -35,7 +35,7 @@ function Update() {
   return (
     <div className="d-flex w-100 vh-100 justify-content-center align-items-center bg-light">
       <div className=" w-50 rounded shadow px-5 pb-5 bg-white">
-        <h1 className="mt-4">Create</h1>
+        <h1 className="mt-4">Update</h1>
 
         <form
           onSubmit={handleUpdate}

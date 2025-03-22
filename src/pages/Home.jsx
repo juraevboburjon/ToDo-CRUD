@@ -19,7 +19,7 @@ function Home() {
       axios
         .delete(`http://localhost:3000/todos/${id}`)
         .then((res) => {
-          location.reload();
+          setTodos((prevTodos) => prevTodos.filter((todo) => todo.id !== id));
         })
         .catch((err) => console.log(err));
     }
@@ -37,10 +37,10 @@ function Home() {
       <div className="col-6 rounded shadow-lg p-3 bg-white">
         <table className="table">
           <tbody>
-            {todos.map((todo, i) => {
+            {todos.map((todo, id) => {
               return (
-                <tr key={i}>
-                  <td>{todo.id}</td>
+                <tr key={id}>
+                  <td>{id + 1}</td>
                   <td>{todo.title}</td>
                   <td className="text-end">
                     <Link to={`/read/${todo.id}`}>

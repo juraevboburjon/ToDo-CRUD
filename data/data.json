@@ -1,16 +1,6 @@
 {
   "todos": [
     {
-      "id": "1",
-      "title": "Read a book",
-      "completed": true
-    },
-    {
-      "id": "2",
-      "title": "Buy a milk",
-      "completed": true
-    },
-    {
       "id": "3",
       "title": "Go to the gym",
       "completed": false
@@ -46,8 +36,8 @@
       "completed": false
     },
     {
-      "id": "10",
-      "title": "Watch a movie",
+      "id": 11,
+      "title": "Create git repo",
       "completed": false
     }
   ]
